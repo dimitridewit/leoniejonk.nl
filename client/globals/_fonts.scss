@@ -1,0 +1,63 @@
+* {
+  font-family: $playfair;
+  color: $black;
+}
+
+h1 {
+  font-size: 20px;
+
+  @include desktop {
+    font-size: 40px;
+  }
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 27px;
+  text-align: center;
+
+  @include desktop {
+    font-size: 28px;
+  }
+}
+
+a, p {
+  .underline {
+    color: inherit;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+
+    &:after {
+      background-color: $light-tan;
+      bottom: 1px;
+      content: '';
+      height: 8px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: -5;
+
+      @include desktop {
+        height: 17px;
+      }
+    }
+  }
+}
+
+.more-information {
+  color: $blush;
+  display: block;
+  font-family: 'Lato';
+  margin: 27px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.blush-text {
+  color: $blush;
+}
+
+.green-text {
+  color: $green;
+}

@@ -1,0 +1,104 @@
+.case {
+  display: block;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+
+  @include desktop {
+    position: absolute;
+    width: 49%;
+
+    &:hover {
+      .case-content {
+        transform: translateY(-10%);
+      }
+
+      .case-img {
+        transform: translateY(10%);
+      }
+    }
+  }
+
+  .case-wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .case-img {
+    display: block;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .55s ease-in-out;
+    width: 80%;
+    z-index: 1;
+  }
+
+  @include desktop {
+    &.flamyngo {
+      height: 48%;
+      left: 0;
+      top: 4%;
+    }
+
+    &.kleine-stapjes {
+      height: 42%;
+      right: 0;
+      top: 0;
+    }
+
+    &.familie-van-fonk {
+      height: 38%;
+      top: 54%;
+      left: 0;
+    }
+
+    &.newbees {
+      height: 58%;
+      right: 0;
+      top: 44%;
+    }
+  }
+}
+
+.case-content {
+  padding: 18% 0 40%;
+  text-align: center;
+  transform: translateY(-120%);
+  transition: .55s ease-in-out;
+  width: 100%;
+  z-index: 2;
+
+  .skills {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    font-size: 24px;
+    font-family: $lato;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .case-link {
+    display: block;
+    font-family: $lato;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 22px;
+    text-transform: uppercase;
+  }
+}
+

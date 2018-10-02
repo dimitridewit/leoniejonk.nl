@@ -1,0 +1,86 @@
+.header {
+  padding-top: 20px;
+
+  @include desktop {
+    margin-bottom: 68px;
+  }
+
+  nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 27px;
+
+    @include desktop {
+      margin-bottom: 43px;
+    }
+  }
+
+  .nav-link {
+    color: $bluey-purple;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+
+  .introduction {
+    @include small-mobile {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  h1 {
+    @include desktop {
+      font-size: 40px;
+    }
+  }
+
+  .menu-link-img {
+    @include desktop {
+      width: 50px;
+    }
+  }
+
+  .portrait {
+    display: block;
+    margin-bottom: 27px;
+    max-width: 570px;
+    width: 100%;
+
+    @include small-mobile {
+      margin-bottom: 0;
+      order: 2;
+      width: 50%;
+    }
+  }
+
+  .text {
+    padding-bottom: 27px;
+
+    @include small-mobile {
+      margin-bottom: 0;
+      width: 48%;
+    }
+
+    p {
+      display: inline;
+      margin: 0;
+      font-size: 20px;
+
+      @include desktop {
+        font-size: 40px;
+      }
+    }
+
+    h1 {
+      display: inline;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": [
+    "jest"
+  ],
+  "rules": {
+    "max-len": [1, 150],
+    "arrow-body-style": "off",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "no-else-return": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-expressions": "off",
+    "consistent-return": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "react/jsx-filename-extension": "off",
+    "react/no-array-index-key": "off",
+    "react/prop-types": "off",
+    "function-paren-newline": "off"
+  },
+  "globals": {
+    "fetch": true,
+    "Headers": true
+  },
+  "env": {
+    "jest/globals": true
+  }
+}

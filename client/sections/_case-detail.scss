@@ -1,0 +1,28 @@
+.case-detail {
+  header {
+    padding-bottom: 55px;
+  }
+
+  .case-detail-intro-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 650px;
+  }
+
+  .case-detail-words {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .case-detail-article {
+    max-width: 650px;
+
+    p {
+      text-align: left;
+      font-size: 22px;
+      font-family: $lato;
+      font-weight: 300;
+      line-height: 1.64;
+    }
+  }
+}

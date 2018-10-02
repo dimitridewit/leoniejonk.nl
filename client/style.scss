@@ -1,0 +1,16 @@
+// sass --watch style.scss:style.css
+@import "globals/normalize.scss";
+
+@import "mixins/media-queries.scss";
+
+@import "globals/vars.scss";
+@import "globals/base.scss";
+@import "globals/fonts.scss";
+
+@import "components/_footer.scss";
+@import "components/_header.scss";
+@import "components/_projects_list.scss";
+@import "components/_case.scss";
+
+@import "sections/home.scss";
+@import "sections/case-detail.scss";
