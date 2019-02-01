@@ -420,6 +420,11 @@ h1 {
     h1 {
       font-size: 40px; } }
 
+h2 {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700; }
+
 p {
   font-size: 16px;
   margin-bottom: 27px;
@@ -666,6 +671,57 @@ footer {
     margin-top: 22px;
     text-transform: uppercase; }
 
+.case-detail-article-aside {
+  max-width: 254px;
+  width: 50%; }
+  .case-detail-article-aside a, .case-detail-article-aside span, .case-detail-article-aside li {
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left; }
+  .case-detail-article-aside ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .case-detail-article-aside h2 {
+    margin: 0 0 6px; }
+  .case-detail-article-aside .block {
+    margin-bottom: 46px; }
+  .case-detail-article-aside .underline {
+    color: #e24c9c;
+    font-size: 20px;
+    font-weight: 400; }
+    .case-detail-article-aside .underline::after {
+      bottom: -2px;
+      height: 11px;
+      width: 103%; }
+
+.case-detail-header {
+  width: 100%; }
+  .case-detail-header .case-detail-header-content {
+    position: relative;
+    padding-bottom: 55px;
+    padding-top: 55px; }
+  .case-detail-header .case-detail-intro-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 650px; }
+  .case-detail-header nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    position: absolute;
+    top: 32px;
+    width: 100%; }
+    .case-detail-header nav a {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none; }
+      .case-detail-header nav a:hover {
+        text-decoration: underline; }
+
 .home .projects-list {
   position: relative;
   z-index: 2; }
@@ -731,22 +787,29 @@ footer {
     .home .get-in-touch a {
       font-size: 40px; } }
 
-.case-detail header {
-  padding-bottom: 55px; }
-.case-detail .case-detail-intro-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 650px; }
 .case-detail .case-detail-words {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 120px; }
+  @media (min-width: 720px) {
+    .case-detail .case-detail-words {
+      margin-top: 220px; } }
 .case-detail .case-detail-article {
+  position: relative;
   max-width: 650px; }
+  .case-detail .case-detail-article h1 {
+    position: absolute;
+    top: -120px;
+    left: 0; }
   .case-detail .case-detail-article p {
     text-align: left;
-    font-size: 22px;
     font-family: "Lato";
     font-weight: 300;
     line-height: 1.64; }
+    @media (min-width: 720px) {
+      .case-detail .case-detail-article p {
+        font-size: 22px; } }
+    .case-detail .case-detail-article p:first-of-type {
+      margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */
