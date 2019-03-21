@@ -2,15 +2,19 @@
   width: 100%;
 
   .case-detail-header-content {
-    position: relative;
+    margin: 0 auto;
+    max-width: 1100px;
     padding-bottom: 55px;
     padding-top: 55px;
+    position: relative;
+    width: 100%;
   }
 
   .case-detail-intro-img {
     display: block;
     margin: 0 auto;
     max-width: 650px;
+    width: 100%;
   }
 
   nav {
@@ -21,6 +25,7 @@
     position: absolute;
     top: 32px;
     width: 100%;
+    max-width: none;
 
     a {
       color: $white;
@@ -32,5 +37,9 @@
         text-decoration: underline;
       }
     }
+  }
+
+  .case-detail-introduction {
+    margin-top: 58px;
   }
 }

@@ -1,11 +1,12 @@
 .case-detail {
   .case-detail-words {
-    display: flex;
-    justify-content: space-between;
-
-    margin-top: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     @include desktop {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
       margin-top: 220px;
     }
   }
@@ -15,9 +16,11 @@
     max-width: 650px;
 
     h1 {
-      position: absolute;
-      top: -120px;
-      left: 0;
+      @include desktop {
+        position: absolute;
+        top: -120px;
+        left: 0;
+      }
     }
 
     p {
@@ -33,6 +36,14 @@
       &:first-of-type {
         margin-top: 0;
       }
+    }
+  }
+
+  .case-detail-credits {
+    margin-bottom: 20px;
+
+    @include desktop {
+      margin-bottom: 150px;
     }
   }
 }

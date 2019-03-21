@@ -1,6 +1,10 @@
 .case-detail-article-aside {
-  max-width: 254px;
-  width: 50%;
+  width: 100%;
+
+  @include desktop {
+    max-width: 254px;
+    width: 50%;
+  }
 
   a, span, li {
     font-family: $lato;
