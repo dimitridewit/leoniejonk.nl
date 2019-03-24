@@ -1,0 +1,23 @@
+.case-detail-two-images {
+  .case-detail-two-images-content {
+    @include desktop {
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .img-wrapper {
+    padding-bottom: 20px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    @include desktop {
+      padding-bottom: 0;
+      width: calc(50% - 10px);
+    }
+  }
+}

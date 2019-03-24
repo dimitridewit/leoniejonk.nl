@@ -702,6 +702,8 @@ a .underline, p .underline {
     margin: 0 0 6px; }
   .case-detail-article-aside .block {
     margin-bottom: 46px; }
+    .case-detail-article-aside .block.awards h2 {
+      margin-bottom: 24px; }
   .case-detail-article-aside .underline {
     color: #e24c9c;
     font-size: 20px;
@@ -710,6 +712,18 @@ a .underline, p .underline {
       bottom: -2px;
       height: 11px;
       width: 103%; }
+  .case-detail-article-aside .award {
+    display: block;
+    max-width: 80%;
+    margin-bottom: 20px;
+    width: 100%; }
+    .case-detail-article-aside .award.lovies {
+      max-width: 130px; }
+    .case-detail-article-aside .award.goldendot {
+      max-width: 100px; }
+    .case-detail-article-aside .award .award-img {
+      display: block;
+      width: 100%; }
 
 .case-detail-header {
   width: 100%; }
@@ -743,6 +757,8 @@ a .underline, p .underline {
         text-decoration: underline; }
   .case-detail-header .case-detail-introduction {
     margin-top: 58px; }
+  .case-detail-header .no-bottom-padding {
+    padding-bottom: 0; }
 
 .case-detail-quote .case-detail-quote-content {
   max-width: 800px;
@@ -801,6 +817,21 @@ a .underline, p .underline {
 @media (min-width: 720px) {
   .case-detail-fancy-gal .column {
     width: calc(50% - 10px); } }
+
+@media (min-width: 720px) {
+  .case-detail-two-images .case-detail-two-images-content {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between; } }
+.case-detail-two-images .img-wrapper {
+  padding-bottom: 20px; }
+  .case-detail-two-images .img-wrapper img {
+    display: block;
+    width: 100%; }
+  @media (min-width: 720px) {
+    .case-detail-two-images .img-wrapper {
+      padding-bottom: 0;
+      width: calc(50% - 10px); } }
 
 .home .projects-list {
   position: relative;
@@ -917,5 +948,10 @@ a .underline, p .underline {
     text-decoration: none; }
     .about nav a:hover {
       text-decoration: underline; }
+
+.flamyngo-case .case-detail-intro-img {
+  max-height: 500px;
+  max-width: 90%;
+  width: auto; }
 
 /*# sourceMappingURL=style.css.map */

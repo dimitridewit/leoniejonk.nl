@@ -25,6 +25,10 @@
 
   .block {
     margin-bottom: 46px;
+
+    &.awards h2 {
+      margin-bottom: 24px;
+    }
   }
 
   .underline {
@@ -36,6 +40,26 @@
       bottom: -2px;
       height: 11px;
       width: 103%;
+    }
+  }
+
+  .award {
+    display: block;
+    max-width: 80%;
+    margin-bottom: 20px;
+    width: 100%;
+
+    &.lovies {
+      max-width: 130px;
+    }
+
+    &.goldendot {
+      max-width: 100px;
+    }
+
+    .award-img {
+      display: block;
+      width: 100%;
     }
   }
 }
