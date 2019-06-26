@@ -1,10 +1,5 @@
 .case-detail-fancy-gal {
   .case-detail-fancy-gal-content {
-    padding-bottom: 40px;
-
-    @include desktop {
-      padding-bottom: 100px;
-    }
 
     img {
       display: block;

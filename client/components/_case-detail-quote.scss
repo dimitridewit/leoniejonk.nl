@@ -2,8 +2,12 @@
   .case-detail-quote-content {
     max-width: 800px;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 20px 0 40px;
     text-align: center;
+
+    @include desktop {
+      padding: 80px 0;
+    }
   }
 
   blockquote {
@@ -20,7 +24,11 @@
   }
 
   footer {
-    font-size: 20px;
+    font-size: 16px;
     color: $faint-grey;
+
+    @include desktop {
+      font-size: 20px;
+    }
   }
 }

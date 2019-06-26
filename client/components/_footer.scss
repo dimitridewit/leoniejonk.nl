@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 15px auto 15px;
     max-width: 176px;
     position: relative;
 
@@ -63,7 +63,9 @@
   }
 
   .social-link {
-    display: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 43px;
     width: 43px;
 
@@ -76,6 +78,10 @@
   .mail-link {
     color: $purple;
     text-decoration: none;
+
+    &:hover {
+      color: $link-hover-color;
+    }
 
     @include desktop {
       font-size: 20px;

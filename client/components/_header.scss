@@ -26,6 +26,10 @@
     @include desktop {
       font-size: 20px;
     }
+
+    &:hover {
+      color: $link-hover-color;
+    }
   }
 
   .introduction {

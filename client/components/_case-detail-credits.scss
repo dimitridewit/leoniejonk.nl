@@ -1,5 +1,10 @@
 .case-detail-credits {
   text-align: center;
+  margin-top: 20px;
+
+  @include desktop {
+    margin-top: 40px;
+  }
 
   .case-detail-credits-content {
     margin: 0 auto;
@@ -11,7 +16,11 @@
   }
 
   h2, .underline {
-    font-size: 28px;
+    font-size: 18px;
+
+    @include desktop {
+      font-size: 28px;
+    }
   }
 
   h2 {

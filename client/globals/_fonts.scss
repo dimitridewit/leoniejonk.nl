@@ -51,6 +51,21 @@ a, p {
   }
 }
 
+a {
+  transition: all .1s ease;
+
+  .underline {
+    transition: all .1s ease;
+  }
+
+  &:hover {
+    color: $link-hover-color;
+
+    .underline {
+      color: inherit;
+    }
+  }
+}
 .more-information {
   color: $blush;
   display: block;

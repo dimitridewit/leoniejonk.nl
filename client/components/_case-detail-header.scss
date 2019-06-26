@@ -37,6 +37,19 @@
         text-decoration: underline;
       }
     }
+
+    .logo {
+      max-width: 39px;
+
+      @include desktop {
+        max-width: 49px;
+      }
+
+      svg {
+        height: auto;
+        width: 100%;
+      }
+    }
   }
 
   .case-detail-introduction {
