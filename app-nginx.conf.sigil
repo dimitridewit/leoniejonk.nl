@@ -1,0 +1,50 @@
+worker_processes 1;
+error_log stderr;
+pid nginx.pid;
+daemon off;
+
+events {
+  worker_connections 768;
+}
+
+http {
+  types_hash_max_size 2048;
+  include mime.types;
+  server {
+    listen {{ $.PORT }};
+    server_name  _;
+    {{ if ne $.NGINX_ROOT "" }}
+      root /app/www/{{ $.NGINX_ROOT }};
+    {{ else }}
+      root /app/www;
+    {{ end }}
+    index index.html;
+    port_in_redirect off;
+
+    location / {
+      try_files $uri $uri/ /index.html;
+    }
+
+    location /flamyngo {
+      try_files $uri $uri/ /flamyngo.html;
+    }
+
+    location /kleine-stapjes {
+      try_files $uri $uri/ /kleine-stapjes.html;
+    }
+
+    location /newbees {
+      try_files $uri $uri/ /newbees.html;
+    }
+
+    location /familie-van-fonk {
+      try_files $uri $uri/ /familie-van-fonk.html;
+    }
+
+    location /about {
+      try_files $uri $uri/ /about.html;
+    }
+
+  }
+}
+
