@@ -1,0 +1,34 @@
+.case-detail-quote {
+  .case-detail-quote-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0 40px;
+    text-align: center;
+
+    @include desktop {
+      padding: 80px 0;
+    }
+  }
+
+  blockquote {
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 0 0 10px;
+    font-size: 20px;
+
+    @include desktop {
+      font-size: 30px;
+    }
+  }
+
+  footer {
+    font-size: 16px;
+    color: $faint-grey;
+
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+}

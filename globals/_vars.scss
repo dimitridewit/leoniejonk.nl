@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+$blush: #f9aaaa;
+$maize: #f7bc4c;
+$light-tan: #f9eeaa;
+$bluey-purple: #6b35c1;
+$black: #222222;
+$pink: #ffdbdb;
+$purple: #8b286e;
+$light-tan: #f9eeaa;
+$green: #44c5aa;
+$link-pink: #e24c9c;
+$white: #ffffff;
+$faint-grey: #999999;
+$font-blue: #4fabbd;
+$font-purple: #667bde;
+$link-hover-color: #8b286e;
+
+$playfair: 'Playfair Display';
+$lato: 'Lato';

@@ -1,0 +1,44 @@
+.case-detail-credits {
+  text-align: center;
+  margin-top: 20px;
+
+  @include desktop {
+    margin-top: 40px;
+  }
+
+  .case-detail-credits-content {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  .credit-part {
+    margin-bottom: 2em;
+  }
+
+  h2, .underline {
+    font-size: 18px;
+
+    @include desktop {
+      font-size: 28px;
+    }
+  }
+
+  h2 {
+    font-family: $playfair;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  a {
+    display: block;
+  }
+
+  .underline {
+    color: $link-pink;
+    font-weight: 700;
+
+    &::after {
+      height: 14px;
+    }
+  }
+}

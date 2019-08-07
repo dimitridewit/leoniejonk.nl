@@ -1,0 +1,119 @@
+.home {
+  .projects-list {
+    position: relative;
+    z-index: 2;
+  }
+
+  article {
+    h1 {
+      margin: 0;
+      margin-bottom: 34px;
+      text-align: center;
+
+      @include desktop {
+
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .what-i-do {
+    background-color: $light-tan;
+    position: relative;
+
+    .what-i-do-content {
+      position: relative;
+    }
+
+    .article-container {
+      padding: 0;
+
+      @include desktop {
+        padding: 40px 50px;
+      }
+    }
+
+    .overflow {
+      background-color: $light-tan;
+      height: 28px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+
+      &.top-overflow {
+        top: -28px;
+      }
+
+      &.bottom-overflow {
+        bottom: -28px;
+      }
+    }
+
+    .top-leaves {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 17px;
+      width: 100%;
+
+      .top-middle {
+        margin: 0 15px;
+      }
+
+      .top-left {
+        padding: 27px;
+      }
+    }
+
+    .bottom-leaf {
+      width: 100%;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .middle-leaf {
+      position: absolute;
+      top: 50%;
+      left: -40px;
+
+      &.right-leaf {
+        right: -40px;
+        left: auto;
+      }
+    }
+  }
+
+  .article-container {
+    padding: 40px 45px;
+
+    @include desktop {
+      margin: 0 auto;
+      max-width: 700px;
+    }
+  }
+
+  .get-in-touch {
+    margin: 60px 0;
+    @include desktop {
+      margin: 100px 0;
+    }
+
+    a {
+      color: $link-pink;
+      display: block;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+
+      @include desktop {
+        font-size: 40px;
+      }
+    }
+  }
+}

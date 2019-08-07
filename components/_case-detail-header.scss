@@ -1,0 +1,62 @@
+.case-detail-header {
+  width: 100%;
+
+  .case-detail-header-content {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-bottom: 55px;
+    padding-top: 55px;
+    position: relative;
+    width: 100%;
+  }
+
+  .case-detail-intro-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 650px;
+    width: 100%;
+  }
+
+  nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    position: absolute;
+    top: 32px;
+    width: 100%;
+    max-width: none;
+
+    a {
+      color: $white;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .logo {
+      max-width: 39px;
+
+      @include desktop {
+        max-width: 49px;
+      }
+
+      svg {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .case-detail-introduction {
+    margin-top: 58px;
+  }
+
+  .no-bottom-padding {
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.newbees-case {
+  .case-detail-intro-img {
+    max-height: 500px;
+    max-width: 90%;
+    width: auto;
+  }
+
+  $newbees-logo-fill: #52bace;
+  .horn-logo-circle {
+    fill: $newbees-logo-fill;
+  }
+
+  .horn-logo {
+    fill: $white;
+  }
+}

@@ -1,0 +1,90 @@
+.footer {
+	background-color: $pink;
+  text-align: center;
+
+  .footer-content {
+    padding: 40px 50px 50px;
+    font-size: 16px;
+    width: 100%;
+
+    @include desktop {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      align-items: flex-end;
+    }
+  }
+
+  h1 {
+    color: $purple;
+    font-size: 16px;
+    margin: 0;
+
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+
+  em {
+    color: $purple;
+    font-style: normal;
+    margin-bottom: 16px;
+
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px auto 15px;
+    max-width: 176px;
+    position: relative;
+
+    @include desktop {
+      margin: 0;
+      bottom: -14px;
+    }
+
+    img {
+      display: inline-block;
+      margin: 0 auto;
+      max-width: 24px;
+      vertical-align: middle;
+      width: 100%;
+
+      @include desktop {
+        max-width: 28px;
+      }
+    }
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    width: 43px;
+
+    @include desktop {
+      height: 53px;
+      width: 53px;
+    }
+  }
+
+  .mail-link {
+    color: $purple;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+}

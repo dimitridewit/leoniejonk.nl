@@ -1,0 +1,84 @@
+.case-detail-article-aside {
+  width: 100%;
+
+  @include desktop {
+    max-width: 254px;
+    width: 50%;
+  }
+
+  &.kleinestapjes {
+    @include desktop {
+      max-width: 275px;
+    }
+  }
+
+  a, span, li {
+    font-family: $lato;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+
+    @include desktop {
+      font-size: 24px;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin: 0 0 6px;
+
+    @include desktop  {
+      font-size: 24px;
+    }
+  }
+
+  .block {
+    margin-bottom: 18px;
+
+    @include desktop {
+      margin-bottom: 46px;
+    }
+
+    &.awards h2 {
+      margin-bottom: 24px;
+    }
+  }
+
+  .underline {
+    color: $link-pink;
+    font-size: inherit;
+    font-weight: 400;
+
+    &::after {
+      bottom: -2px;
+      height: 11px;
+      width: 103%;
+    }
+  }
+
+  .award {
+    display: block;
+    max-width: 80%;
+    margin-bottom: 20px;
+    width: 100%;
+
+    &.lovies {
+      max-width: 130px;
+    }
+
+    &.goldendot {
+      max-width: 100px;
+    }
+
+    .award-img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
